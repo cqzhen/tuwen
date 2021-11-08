@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+#ios_guid {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000b8;
+  z-index: 1000;
+  padding-top: 30px;
+}
+
+.ios_guid_image, .ios_guid_text {
+  height: 100px;
+  flex: 1;
+  color: white;
+  bottom: 0;
+  text-align: right;
+  line-height: 180px;
+  font-size: 20px;
+}
+
+.ios_guid_image {
+  padding-right: 80px;
+}
