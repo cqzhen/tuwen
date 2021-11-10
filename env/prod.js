@@ -1,4 +1,11 @@
 window.graphics.graphic_prod = {
+  'global_config': [
+    {
+      title:'项目配置1',
+      type: 'global_config',
+      appId: ''
+    },
+  ],
   '图文1': [ 
     {
       style: 'width: 100%;height: none;',

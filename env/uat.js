@@ -1,5 +1,12 @@
 window.graphics = {};
 window.graphics.graphic_uat = {
+  'global_config': [
+    {
+      title:'项目配置1',
+      type: 'global_config',
+      appId: ''
+    },
+  ],
   '图文1': [ 
     {
       style: 'width: 100%;height: none;',
