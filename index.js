@@ -52,6 +52,7 @@ function renderContext({env, page}) {
   let graphicEnv = getEnv(env) || {};
   let graphicContext = graphicEnv[page] || [];
   let elements = '';
+  if (graphicContext.length) document.title = graphicContext[0].title;
   graphicContext.forEach((item, index) => {
     if (item.type == 'image') elements += `<image src="${item.src}" class="${item.id}" style="${item.style}" onclick='goTo(this)' data-path=${item.path} data-type=${item.type} data-call-type=${item.callType} data-id=${item.id} data-env=${env}/>`;
     if (item.type == 'video') elements += `<video id=${item.id} style="${item.style}" preload="metadata" controls><source src="${item.src}" type="video/mp4" /></video>`;
